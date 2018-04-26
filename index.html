@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Nuclear Energy</title>
+	
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Gugi|Open+Sans|Roboto" rel="stylesheet">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: Open Sans, helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+        
+    span {
+        font-size:30px;
+        font-family: gugi, cursive;
+    }
+
+     @media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 3em;
+    }
+}   
+    p { 
+        font-family: serif;
+        font-size: 20px;
+        color: #fff;
+        max-width: 50%;   
+        
+        padding: 0;
+        margin: auto;
+    }
+        
+        
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/bg7.jpg);
+	}
+	#section0 h1{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+        
+    #section1{
+		background-image: url(imgs/bg6.jpg);
+		padding: 6% 0 0 0;
+	}
+        
+	#section2{
+		background-image: url(imgs/bg8.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg9.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #fff;
+	}
+
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/bg2.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/bg5.jpg);
+		padding: 6% 0 0 0;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+        <h1>Nuclear Energy--A Remix
+        <br>
+        <span>By Michael E, ENC1101</span>
+        </h1>
+       
+    </div>
+    <div class="section" id="section1"><h1>Waste & Containment</h1>
+    <p>Nuclear Waste is considered one of, if not the largest risk of operating nuclear power plants. Solutions seem rarely discussed, and even if they are, many are effective only in the short-term.</p>
+    </div>
+	<div class="section" id="section2"><h1>Power Generation</h1></div>
+	<div class="section" id="section3"><h1>Conclusion</h1></div>
+</div>
+
+</body>
+</html>
